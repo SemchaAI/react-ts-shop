@@ -1,0 +1,37 @@
+.text {
+  height: 50px;
+  width: 100%;
+  padding: 0 20px;
+
+  outline: none;
+
+  border: 1px solid var(--on-surface-medium-accent);
+  border-radius: 3.5px;
+
+  color: var(--on-background);
+  background-color: var(--background);
+
+  @include body1Typo;
+  @include transition;
+  &:hover,
+  &:focus {
+    border: 1px solid var(--primary);
+    outline: none;
+  }
+  &:focus + .icon {
+    fill: var(--secondary);
+  }
+}
+.inputError {
+  border: 1px solid var(--error);
+}
+.file {
+  display: none;
+}
+.error {
+  padding-left: 5px;
+  display: flex;
+  align-items: center;
+  color: var(--error);
+  height: 24px;
+}

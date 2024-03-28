@@ -1,0 +1,22 @@
+.title {
+  display: flex;
+  justify-content: center;
+  @include headline5Typo;
+}
+.form {
+  margin-top: 10px;
+  @include body2Typo;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.label {
+  @include body1Typo;
+}
+
+.modalControls {
+  display: flex;
+  gap: 10px;
+}

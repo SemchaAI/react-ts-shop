@@ -1,0 +1,39 @@
+.login {
+  margin-top: 40px;
+  color: var(--tertiary);
+}
+.loginContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.loginTitle {
+  margin: 0 auto;
+  @include headline3Typo;
+  color: var(--primary);
+}
+.loginForm {
+  margin: 0 auto;
+  min-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.formControls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.field {
+}
+.label {
+}
+.input {
+}
+.linkBlock {
+  display: flex;
+  gap: 5px;
+  position: relative;
+}
+.link {
+}

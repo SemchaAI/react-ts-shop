@@ -1,0 +1,26 @@
+.products {
+}
+.productsContainer {
+  margin-top: 80px;
+}
+.productsBlock {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.productsWrapper {
+  flex-grow: 1;
+  width: 75%;
+}
+.productsTitle {
+  color: var(--primary);
+
+  @include headline3Typo;
+}
+.spinnerContainer {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+}

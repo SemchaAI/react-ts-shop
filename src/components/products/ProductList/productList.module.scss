@@ -1,0 +1,11 @@
+.productsList {
+  margin-top: 40px;
+  /* temporal margin */
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0;
+  color: var(--surface);
+}

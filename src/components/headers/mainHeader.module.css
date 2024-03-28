@@ -1,0 +1,37 @@
+.header {
+  background-color: var(--background-soft);
+  box-shadow: var(--dp-0);
+  position: sticky;
+  top: 0;
+  z-index: var(--header);
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.headerBlock {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  width: 100%;
+}
+
+.loadingSpinner {
+  display: flex;
+  width: 80px;
+  height: 160px;
+}
+
+.logoLink {
+  color: var(--primary);
+  justify-content: flex-start;
+}
+
+.user {
+  color: var(--on-background);
+  align-items: center;
+  gap: 20px;
+}

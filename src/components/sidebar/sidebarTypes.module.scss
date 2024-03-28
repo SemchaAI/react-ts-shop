@@ -1,0 +1,27 @@
+.sideBar {
+  width: 25%;
+  flex-grow: 1;
+  position: sticky;
+  top: 100px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: var(--surface);
+  height: fit-content;
+  @include body1Typo;
+  box-shadow: var(--dp-0);
+}
+.type {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  @include transition;
+
+  &:hover,
+  &:focus {
+    color: var(--on-surface);
+  }
+}
+.activeType {
+  background-color: var(--primary);
+  color: var(--on-surface);
+}

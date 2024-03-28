@@ -1,0 +1,30 @@
+.headerNav {
+  width: 100%;
+  height: fit-content;
+  align-self: center;
+
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+
+  gap: 20px;
+}
+.badge {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+
+  display: flex;
+  width: 24px;
+  height: 24px;
+  padding: 2px 4px;
+
+  justify-content: center;
+  align-self: center;
+
+  @include body2Typo;
+
+  color: var(--on-primary);
+  background: var(--primary);
+  border-radius: 50%;
+}

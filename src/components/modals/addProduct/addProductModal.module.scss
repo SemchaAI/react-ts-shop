@@ -1,0 +1,54 @@
+.form {
+  margin-top: 10px;
+}
+
+.infoContainer {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.fieldsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+.error {
+  display: flex;
+  align-items: center;
+  color: var(--error);
+  height: 24px;
+}
+
+.fakeBtn {
+  display: block;
+  width: fit-content;
+  padding: 10px 20px;
+  color: var(--primary);
+  background-color: var(--on-primary);
+  cursor: pointer;
+  border-radius: 4px;
+
+  @include transition;
+
+  &:hover,
+  &:focus {
+    color: var(--tertiary);
+    background-color: var(--primary);
+  }
+}
+
+// select
+.select {
+  color: var(--primary);
+  background-color: var(--on-primary);
+}

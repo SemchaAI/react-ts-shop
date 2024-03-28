@@ -1,0 +1,17 @@
+.link {
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+  @include body1Typo;
+  @include transition;
+
+  color: var(--primary);
+  &.router-link-active {
+    color: var(--secondary);
+  }
+  &:hover,
+  &:focus {
+    color: var(--primary-focused);
+  }
+}

@@ -1,0 +1,87 @@
+.favorite {
+  margin-top: 40px;
+}
+.favoriteContainer {
+}
+.favoriteTitle {
+  @include headline3Typo;
+}
+.favoriteBlock {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+.favoriteItems {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.favoriteItem {
+  // min-width: 300px;
+  // width: fit-content;
+  width: 330px;
+  padding: 20px;
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 8px;
+  background-color: var(--tertiary);
+  box-shadow: var(--dp-0);
+}
+.favoriteItemContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.favoriteItemImg {
+  border-radius: 8px;
+  @include transition;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+.favoriteItemInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--surface);
+}
+.favoriteItemTitle {
+  max-width: 300px;
+}
+.favoriteItemDescription {
+  max-width: 300px;
+  @include smartText(5lh);
+  @include body2Typo;
+  color: var(--on-primary-medium-accent);
+}
+.favoriteControls {
+  display: flex;
+  justify-content: space-between;
+}
+.favoriteItemPrice {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  & b {
+    font-weight: bold;
+  }
+}
+
+.emptyFavorite {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
