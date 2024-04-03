@@ -9,7 +9,7 @@ import { useDeleteOneMutation } from '@/services/cartApi';
 const url = import.meta.env.VITE_BASE_URL_BD;
 
 export default function CartPage() {
-  const { items, total } = useAppSelector((state) => state.cart);
+  const { items } = useAppSelector((state) => state.cart);
   const { id: userId } = useAppSelector((state) => state.user.user);
 
   const [deleteOne] = useDeleteOneMutation();
